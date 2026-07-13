@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import PersonsView from "../views/PersonsView.vue";
+import MainView from "../views/SharedViews/MainView.vue";
+import PersonsView from "../views/BudgetManagerViews/PersonsView.vue";
 
 const routes = [
-  { path: "/", component: PersonsView },
+  { path: "/", component: MainView },
+  { path: "/BudgetManager/persons", component: PersonsView },
 ];
 
 export default createRouter({
